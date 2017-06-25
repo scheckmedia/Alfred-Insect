@@ -37,6 +37,12 @@ def main(wf):
     log.debug('query : %s', query)
     log.debug('PATH: %s' % os.environ['PATH'])
 
+    # Notify of available update
+    if wf.update_available:
+        wf.add_item('A newer version is available',
+                    'Action this item to download & install the new version',
+                    autocomplete='workflow:update')
+
     if cmd_exists(BINARY):
         out = None
         error = None
@@ -72,6 +78,8 @@ def main(wf):
         return 1
 
 if __name__ == '__main__':
-    wf = Workflow()
+    wf = Workflow(
+        help_url='https://github.com/scheckmedia/Alfred-Insect/issues',
+        update_settings={'github_slug': 'scheckmedia/Alfred-Insect'})
     log = wf.logger
     sys.exit(wf.run(main))
