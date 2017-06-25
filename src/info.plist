@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string></string>
+	<string>de.scheckmedia.alfred-insect</string>
 	<key>category</key>
 	<string>Tools</string>
 	<key>connections</key>
@@ -33,9 +33,9 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string></string>
+	<string>Tobias Scheck</string>
 	<key>description</key>
-	<string></string>
+	<string>a Alfred-Workflow for Insect (https://github.com/sharkdp/insect)</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -153,6 +153,6 @@
 		</dict>
 	</dict>
 	<key>webaddress</key>
-	<string></string>
+	<string>http://wwws.scheck-media.de</string>
 </dict>
 </plist>
